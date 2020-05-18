@@ -16,6 +16,8 @@ kompasPKG is a beta version of the package that can be installed, after unzippin
 
 For more information on using KOMPAS, see the documentation on the repo wiki.
 
+Currently, the .py files are compatible with Windows, macOS, and Linux while the packaged version currently works on macOS and Linux. 
+
 Many thanks to the following individuals for their user feedback and review:
 
 Tiffany Ho, Farica Zhuang, Harshit Sahay
