@@ -358,6 +358,7 @@ if isFasta:
         if header.startswith('>') and seq:
             ID = header.rstrip()[1:]
             seq = seq.rstrip()
+            seq = seq.upper()
             seqLen = len(seq)
             # If possible, look at forward sequences always. If not a palindrome, look at revComp
             if seqLen >= minLength:
