@@ -2,7 +2,7 @@
 
 # TF KOMPAS: Site Caller
 # Author: Zachery Mielko
-# Version: 5/17/2020
+# Version: 5/18/2020
 
 import argparse
 programDescription = 'Calls TFBS from bed/genome or fasta files'
@@ -377,6 +377,7 @@ else:
         col = line.split('\t')
         ID= [col[0], int(col[1]), int(col[2])]
         seq = str(genome[ID[0]][ID[1]:ID[2]])
+        seq = seq.upper()
         seqLen = len(seq)
         # If possible, look at forward sequences always. If not a palindrome, look at revComp
         if seqLen >= minLength:
